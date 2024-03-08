@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="left">
+            <div id="lnav">
+                <i class="ri-arrow-left-line"></i>
+                <div id="lnavr">
+                    <a href="#" id="homeLink">Home</a>
+                    <a href="#" id="workLink">Work</a>
+                    <i class="ri-twitter-fill"></i>
+                </div>
+                <div id="menuBtn" onclick="toggleMenu()">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <div id="textcenter">
+                <h1>Hello,</h1>
+                <p>
+                    <strong><em>"LET'S TRAVEL THE WORLD"</em></strong>
+                    <br>
+                    <b><i>"The world is a book, and those who do not travel read only a page." - said Saint Augustine.
+                            <br>
+                            Travelling can teach you more than any university course. You learn about the culture of the
+                            country
+                            you visit.
+                        
+                            If you talk to locals, you will likely learn about their thinking. habits, traditions and
+                            history as well.</i></b>
+                </p>
+                <a href="#">Read</a>
+            </div>
+        </div>
+        <div id="right">
+            <div id="rtop">
+                <div id="rtopleft"></div>
+                <div id="rtopright"></div>
+            </div>
+            <div id="rbottom"></div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var links = document.getElementById("lnavr");
+            links.style.display = (links.style.display === "flex") ? "none" : "flex";
+        }
+    </script>
+</body>
+
+</html>
